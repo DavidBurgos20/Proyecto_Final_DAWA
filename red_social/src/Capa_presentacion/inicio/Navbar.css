@@ -1,0 +1,9 @@
+/* Navbar.css */
+.account-details {
+  display: flex;
+  align-items: center;
+}
+
+.account-details .username {
+  margin-left: 8px;
+}

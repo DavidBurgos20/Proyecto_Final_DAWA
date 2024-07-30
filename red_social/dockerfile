@@ -1,0 +1,18 @@
+FROM node:14
+
+# Set working directory to /app
+WORKDIR /app
+
+# Copy package.json and install dependencies
+COPY package*.json .
+# Copy application code
+RUN npm install
+COPY . .
+
+RUN npm run build
+
+# Expose port 3000 for the React app
+EXPOSE 3000
+
+# Run command to start the React app
+CMD ["npm", "start"]

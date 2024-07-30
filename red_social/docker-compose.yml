@@ -1,0 +1,38 @@
+version: '3.1'
+
+services:
+  dawa:
+    container_name: dawa_api_red_social
+    image: 'dawa_ws_image:latest'
+    restart: always
+    ports:
+      - '1002:1013'
+    volumes:
+      - c:/MRC/data/LOGS/dawa_ws:/app/dawa/src/utils/general/LOGS
+    environment:
+      - PORT=1013
+
+  db:
+    container_name: dawa_bd_red_social
+    image: postgres_base:latest
+    environment:
+      - POSTGRES_PASSWORD=caiste123
+      - POSTGRES_USER=postgres
+      - POSTGRES_DB=red_social_estudiantes
+      - POSTGRES_PORT=5432
+    volumes:
+      - pgdata:/var/lib/postgresql/data
+
+  frontend:
+    container_name: frontend_red_social
+    image: redsocial:latest
+    build: .
+    ports:
+      - '3000:3000'
+    depends_on:
+      - dawa
+    environment:
+      - REACT_APP_API_URL=http://dawa:1013
+
+volumes:
+  pgdata:

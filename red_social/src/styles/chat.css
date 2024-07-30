@@ -1,0 +1,18 @@
+.sentMessage {
+    background-color: #e1ffc7;
+    align-self: flex-end;
+    border-radius: 10px;
+    padding: 8px;
+    margin: 5px;
+    max-width: 80%;
+  }
+  
+  .receivedMessage {
+    background-color: #ffffff;
+    align-self: flex-start;
+    border-radius: 10px;
+    padding: 8px;
+    margin: 5px;
+    max-width: 80%;
+  }
+  

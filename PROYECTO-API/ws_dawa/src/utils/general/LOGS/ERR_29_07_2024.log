@@ -1,0 +1,1 @@
+23:15:55 - ERR - post - ("Error al validar el request -> {'login_password': ['Missing data for required field.'], 'login_email': ['Missing data for required field.'], 'contraseña': ['Unknown field.'], 'email': ['Unknown field.']}",)

@@ -1,0 +1,26 @@
+body {
+  background-color: #e0f7fa; /* Fondo celeste claro para toda la pantalla */
+  margin: 0;
+  padding: 0;
+}
+
+.feed-container {
+  background-color: #e0f7fa; /* Asegurarse de que el fondo del contenedor también sea celeste */
+  min-height: 100vh;
+}
+
+.feed-box {
+  margin-top: 20px;
+}
+
+.feed-card {
+  margin-bottom: 20px;
+}
+
+.comment-box {
+  padding: 20px;
+}
+
+.comment-box .MuiButton-root {
+  margin-top: 10px;
+}

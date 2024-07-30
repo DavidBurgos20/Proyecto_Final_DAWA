@@ -1,0 +1,45 @@
+.profile-container {
+  background-color: #e0f7fa; /* Fondo celeste claro */
+  min-height: 100vh;
+  padding-top: 20px;
+}
+
+.profile-header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 40px;
+}
+
+.profile-avatar {
+  width: 150px;
+  height: 150px;
+}
+
+.profile-details {
+  margin-left: 24px;
+}
+
+.profile-username {
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.profile-bio {
+  font-size: 1.2rem;
+  margin-top: 8px;
+}
+
+.profile-joined {
+  margin-top: 4px;
+}
+
+.profile-posts {
+  margin-top: 20px;
+}
+
+.feed-card {
+  margin-bottom: 20px;
+}
+
+
+  

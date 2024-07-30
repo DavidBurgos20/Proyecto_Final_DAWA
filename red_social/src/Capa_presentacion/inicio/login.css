@@ -1,0 +1,66 @@
+body, html {
+  height: 100%;
+  margin: 0;
+}
+
+.login-container {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;  /* Cambia a flex-start para permitir el margen superior */
+  height: 100vh;
+  background-color: #e3f2fd; /* Fondo celeste bajo */
+  padding-top: 10vh;  /* Ajusta este valor según sea necesario para centrar verticalmente */
+}
+
+.login-box {
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+  
+  .login-left {
+    background: linear-gradient(to bottom, #0052cc, #007bff);
+    color: white;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+  }
+  
+  .login-left h1 {
+    margin-bottom: 10px;
+  }
+  
+  .login-left p {
+    font-size: 18px;
+    text-align: center;
+  }
+  
+  .login-right {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .login-right form {
+    width: 100%;
+    max-width: 400px;
+  }
+  
+  .login-right .MuiAvatar-root {
+    background-color: #007bff;
+  }
+  
+  .login-right .MuiButton-root {
+    background-color: #007bff;
+    color: white;
+  }
+  
+  .login-right .MuiButton-root:hover {
+    background-color: #0052cc;
+  }
+  

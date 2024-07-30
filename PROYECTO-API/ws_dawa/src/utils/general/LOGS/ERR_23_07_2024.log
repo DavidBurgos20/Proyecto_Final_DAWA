@@ -1,0 +1,2 @@
+18:14:04 - ERR - put - ("Error al validar el request -> {'user:id': ['Unknown field.']}",)
+18:53:30 - ERR - put - ("Error al validar el request -> {'contenido': ['Missing data for required field.'], 'cotenido': ['Unknown field.']}",)
